@@ -1,0 +1,26 @@
+<h1>List Of All Customer</h1>
+
+
+
+<%= link_to 'New Apply', new_canada_path %><br><br>
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Nationality</th>
+    <th>Passport no</th>
+    <th>Visa category</th>
+    <th>Application status</th>
+  </tr>
+  <% @canadas.each do |canada| %>
+  <tr>
+    <td><%= canada.first_name %></td>
+    <td><%= canada.nationality %></td>
+    <td><%= canada.passport_no %></td>
+    <td><%= canada.visa_category %></td>
+    <td><%= canada.application_status %></td>
+    <td><%= link_to 'show', canada_path(canada) %></td>
+    <td><%= link_to 'edit', edit_canada_path(canada) %></td>
+    <td><%= link_to "Delete", canada_path(canada), :confirm => "Are you sure?", :method => :delete %></td>
+  </tr>
+  <%end%>
+</table>

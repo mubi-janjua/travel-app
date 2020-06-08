@@ -1,0 +1,46 @@
+<h1>DETAILS</h1>
+<p>
+  <strong>Application no:CA******</strong>
+</p>
+<p>
+  <strong>First name:</strong>
+  <%= @canada.first_name %>
+</p>
+<p>
+  <strong> Surname:</strong>
+  <%= @canada.surname %>
+</p>
+<p>
+  <strong>Last name</strong>
+  <%= @canada.last_name %>
+</p>
+<p>
+  <strong>Nationality:</strong>
+  <%= @canada.nationality %>
+</p>
+<p>
+  <strong>Passport no:</strong>
+  <%= @canada.passport_no%>
+</p>
+<p>
+  <strong>Passport expiry</strong>
+  <%= @canada.passport_expiry %>
+</p>
+<p>
+  <strong>Visa category</strong>
+  <%= @canada.visa_category %>
+</p>
+<p>
+  <strong>Date&Time</strong>
+  <%= @canada.date_time %>
+</p>
+<p>
+  <strong>Application Status</strong>
+  <%= @canada.application_status %>
+</p>
+<p>
+  <strong>Marital Status</strong>
+  <%= @canada.marital_status%>
+</p>
+ <td><%= link_to 'edit', edit_canada_path(@canada) %></td> |
+<%= link_to 'Back', canada_main_path(:can) %>

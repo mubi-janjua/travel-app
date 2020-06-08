@@ -1,0 +1,64 @@
+<%= form_for @canada do |f| %>
+
+  <% if @canada.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@canada.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h2>
+      <ul>
+        <% @canada.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :'Application no' %>
+    <%= f.text_field :application_no %>
+  </p>
+  <p>
+    <%= f.label :'First name' %>
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.label :'Surname' %>
+    <%= f.text_field :surname %>
+  </p>
+  <p>
+    <%= f.label :'Last name' %>
+    <%= f.text_field :last_name %>
+  </p>
+  <p>
+    <%= f.label :'Nationality' %>
+    <%= f.text_field :nationality %>
+  </p>
+  <p>
+    <%= f.label :'Passport no' %>
+    <%= f.text_field :passport_no %>
+  </p>
+  <p>
+    <%= f.label :'Passport expiry' %>
+    <%= f.date_field :passport_expiry %>
+  </p>
+  <p>
+    <%= f.label :'Visa Category' %>
+    <%= f.text_field :visa_category %>
+  </p>
+  <p>
+    <%= f.label :'Date&time' %>
+    <%= f.datetime_field :date_time %>
+  </p>
+  <p>
+    <%= f.label :'Application status' %>
+    <%= f.text_field :application_status %>
+  </p>
+  <p>
+    <%= f.label :'Marital status' %>
+    <%= f.text_field :marital_status %>
+  </p>
+  <p>
+    <%= f.submit 'submit'%>
+  </p>
+<%end%>
