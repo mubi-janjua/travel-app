@@ -4,5 +4,6 @@ Rails.application.routes.draw do
     get '/immigrant', to: 'canadas#immigrant', as: 'immigrant'
     get '/study', to: 'canadas#study', as: 'study'
     get '/work', to: 'canadas#work', as: 'work'
+    get '/visit', to: 'canadas#visit', as: 'visit'
     end
 end

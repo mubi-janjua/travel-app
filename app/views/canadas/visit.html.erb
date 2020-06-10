@@ -1,0 +1,80 @@
+<body style="overflow-x: hidden;">
+<div class="pic1">
+  <%= link_to canadas_path do %>
+    <%= image_tag "2" %>
+  <%end%>
+</div>
+
+<p  class="pic2"></p>
+<div class="dropdown-show">
+  <a class="btn btn-light dropdown-toggle" href="#" role="button" id="             dropdownMenuLink" data-toggle="dropdown">
+    Menu
+  </a>
+
+  <div class="dropdown-menu" >
+    <%= link_to 'visit', canada_visit_path(:visa), class: "dropdown-item" %>
+
+    <%= link_to 'immigrant', canada_immigrant_path(:visa), class: "dropdown-item" %>
+
+    <%= link_to 'study', canada_study_path(:visa), class: "dropdown-item" %>
+
+    <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
+  </div>
+</div>
+<div class="container">
+    <div class="col-lg-6" style="vertical-align: top; min-height: 113px;">
+      <h1 class="kk">Visitor:visa Canada</h1>
+      <p class="jj"></p>
+      <h2><strong>Eligibility</strong></h2>
+      <p>You must meet some basic requirements to get a visitor visa. You must:</p>
+      <ul>
+        <li>have a valid travel document, like a passport</li>
+        <li>be in good health</li>
+        <li>have no criminal or immigration-related convictions</li>
+        <li>convince an immigration officer that you have ties—such as a job, home, financial assets or family—that will take you back to your home country</li>
+        <li>convince an immigration officer that you will leave Canada at the end of your visit</li>
+        <li>have enough money for your stay
+          <ul>
+            <li>The amount of money you will need depends on how long you will stay and if you will stay in a hotel, or with friends or relatives.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+     <p>You may also need a medical exam and letter of invitation from someone who lives in Canada.</p>
+    <div class="container">
+      <h2><strong>Some people are not allowed to enter Canada</strong></h2>
+      <p>Some people are not admissible to Canada, which means they are not allowed to enter the country. You can be inadmissible for several reasons, including being involved in:</p>
+      <ul>
+        <li>criminal activity</li>
+        <li>human rights violations</li>
+        <li>organized crime</li>
+      </ul>
+      <p>You can also be inadmissible for security, health or financial reasons. Find out more about inadmissibility.</p>
+    </div>
+    <div class="container">
+      <h2><strong>Minor children travelling to Canada</strong></h2>
+      <p>Make sure you know what to do if your minor children (children under the age of 18) will be travelling with you, with someone else, or alone.</p>
+    </div>
+    <div style="text-align: center;">
+      <%= link_to "Apply now", new_canada_path, class: "btn btn-dark"  %>
+    </div>
+                    <div class="brand">
+                <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
+                  <div class="row">
+                    <nav class="col-sm-10 ftr-urlt-lnk">
+                      <ul class="list-group flex-md-row" style="margin-top: 18px; ">
+                        <li style="margin-right: 27px;">social-media</li>
+                        <li style="margin-right: 27px;">Mobile-Application</li>
+                        <li style="margin-right: 27px;">canad.ca</li>
+                        <li style="margin-right: 27px;">Term&condition</li>
+                        <li>Privacy</li>
+                      </ul>
+                    </nav>
+                    <div class="col-xs-6 col-md-2 text-right">
+                     <%= image_tag "last"%>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  </div>
+</body>
