@@ -1,0 +1,95 @@
+<body style="overflow-x: hidden;">
+  <div class="pic1">
+    <%= link_to canadas_path do %>
+    <%= image_tag "2" %>
+    <%end%>
+  </div>
+
+  <p  class="pic2"></p>
+  <div class="dropdown-show">
+    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="                            dropdownMenuLink" data-toggle="dropdown">Menu
+    </a>
+
+    <div class="dropdown-menu" >
+      <%= link_to 'visit', canada_visit_path(:visa), class: "dropdown-item" %>
+
+      <%= link_to 'immigrant', canada_immigrant_path(:visa), class: "dropdown-item" %>
+
+      <%= link_to 'study', canada_study_path(:visa), class: "dropdown-item" %>
+
+      <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
+    </div>
+  </div>
+  <div class="container">
+    <div class="mwscolumn section">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mwstitle section">
+            <h1 id="imi">Work in Canada</h1>
+            <p class="jkk"></p>
+            <p>Apply to work in Canada, extend a work permit or hire a foreign worker.</p>
+          </div>
+          <div class="col-md-6 mrgn-tp-md hidden-sm hidden-xs op3">
+            <%= image_tag "work" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top: 30px;">
+    <h2><strong>Canada Work Permit (Visa)</strong></h2>
+    <p>A work permit to work in Canada is issued to a person who is not a Canadian citizen or a permanent resident of Canada (for a specified job and length of time). It is required whether or not the employer is in Canada. To apply for a work permit at a visa office, you must be legally admitted to or a citizen of a country that is served by this visa office. </p>
+    <ul>
+      <li>A work permit does not let you live in Canada permanently. To do so, you must qualify under an immigration category as a permanent resident.</li>
+      <li>Your spouse or common-law partner and your dependent children may apply to come to Canada with you, and, if they wish, apply for a study or work permit.</li>
+      <li>Caregivers who meet certain requirements can apply to stay in Canada permanently.</li>
+    </ul>
+    <h2><strong>How to Get a Work Visa for Canada</strong></h2>
+    <ul>
+      <li>In most cases, you will need a written job offer or contract of employment from your employer in Canada before you apply for a work permit.
+        <br>Your employer may need to get a Labour Market Impact Assessment (LMIA) to hire you. This is a document from the Government of Canada that gives your employer permission to hire a foreign worker.</li>
+      <li>If you are applying for an open work permit, you do not need to provide a written job offer with your application.
+      Open work permits can only be issued to</li>
+      <li>accompanying spouses and common-law partners in certain cases,</li>
+      <li>accompanying dependent children in certain cases.</li>
+      <li>participants in International Experience Canada (working holiday).</li>
+    </ul>
+    <p>Some jobs do not require a work permit. If you are a citizen of a country that requires a temporary resident visa to enter Canada, you will need to apply for a visa if you do not need a work permit.</p>
+    <h2><strong>Documentation & Language</strong></h2>
+    <p>Submitted documents must be in English, French and Spanish. Documents in other languages must be accompanied by a certified translation. Failure to submit all required documentation may result in the refusal of your application or processing delays. False statements or submission of fraudulent documents will result in immediate refusal and potentially legal action. </p>
+    <p>If your spouse/common-law partner and/or children wishes to accompany you in Canada, they need to apply for their own Work permit.</p>
+    <h2><strong>Required documentation</strong></h2>
+    <ul>
+      <li>Application form Application for Work Permit made Outside of Canada</li>
+      <li>Family Information Form (IMM 5645)</li>
+      <li>Two (2) passport photographs</li>
+      <li>Processing fee in the acceptable format.</li>
+      <li>Valid passport - there must be one completely blank page available other than the last page. Visa validity will coincide with the work permit validity or passport validity whichever is shorter as the visa cannot be valid beyond the passport validity.</li>
+      <li>A copy of the Labour Market Opinion (LMO) provided by Employment and Social Development Canada (ESDC), if applicable.</li>
+      <li>Your job offer or contract from your prospective employer giving your job title, wages and working conditions.</li>
+      <li>Proof indicating you meet the requirements of the job being offered such as employment references outlining previous jobs and job duties, copies of relevant education certificates, proof of professional qualifications.</li>
+      <li>Proof of financial support to cover the expenses for the duration of your visit.</li>
+    </ul>
+    <div style="text-align: center;">
+     <%= link_to "Apply now", new_canada_path, class: "btn btn-dark"  %>
+    </div>
+    <div class="brand">
+      <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
+        <div class="row">
+          <nav class="col-sm-10 ftr-urlt-lnk">
+            <ul class="list-group flex-md-row" style="margin-top: 18px; ">
+              <li style="margin-right: 27px;">social-media</li>
+              <li style="margin-right: 27px;">Mobile-Application</li>
+              <li style="margin-right: 27px;">canad.ca</li>
+              <li style="margin-right: 27px;">Term&condition</li>
+              <li>Privacy</li>
+            </ul>
+          </nav>
+          <div class="col-xs-6 col-md-2 text-right">
+           <%= image_tag "last"%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

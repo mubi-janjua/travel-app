@@ -1,64 +1,96 @@
-<%= form_for @canada do |f| %>
-
-  <% if @canada.errors.any? %>
-    <div id="error_explanation">
-      <h2>
-        <%= pluralize(@canada.errors.count, "error") %> prohibited
-        this article from being saved:
-      </h2>
-      <ul>
-        <% @canada.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
+<div class="container" style="margin-top: 1px;">
+ <%= form_for @canada do |f| %>
+  <div class="form-group">
+    <% if @canada.errors.any? %>
+      <div id="error_explanation">
+        <h2>
+          <%= pluralize(@canada.errors.count, "error") %> prohibited
+          this article from being saved:
+        </h2>
+        <ul>
+          <% @canada.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <div class="form-row">
+      <div  class="form-group col-md-4">
+        <p>
+          <%= f.label :'Application no'%>
+          <%= f.text_field :application_no, class: "form-control", placeholder: "Application no"%>
+        </p>
+      </div>
     </div>
-  <% end %>
-
-  <p>
-    <%= f.label :'Application no' %>
-    <%= f.text_field :application_no %>
-  </p>
-  <p>
-    <%= f.label :'First name' %>
-    <%= f.text_field :first_name %>
-  </p>
-  <p>
-    <%= f.label :'Surname' %>
-    <%= f.text_field :surname %>
-  </p>
-  <p>
-    <%= f.label :'Last name' %>
-    <%= f.text_field :last_name %>
-  </p>
-  <p>
-    <%= f.label :'Nationality' %>
-    <%= f.text_field :nationality %>
-  </p>
-  <p>
-    <%= f.label :'Passport no' %>
-    <%= f.text_field :passport_no %>
-  </p>
-  <p>
-    <%= f.label :'Passport expiry' %>
-    <%= f.date_field :passport_expiry %>
-  </p>
-  <p>
-    <%= f.label :'Visa Category' %>
-    <%= f.text_field :visa_category %>
-  </p>
-  <p>
-    <%= f.label :'Date&time' %>
-    <%= f.datetime_field :date_time %>
-  </p>
-  <p>
-    <%= f.label :'Application status' %>
-    <%= f.text_field :application_status %>
-  </p>
-  <p>
-    <%= f.label :'Marital status' %>
-    <%= f.text_field :marital_status %>
-  </p>
-  <p>
-    <%= f.submit 'submit'%>
-  </p>
-<%end%>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <p>
+          <%= f.label :'First name' %>
+          <%= f.text_field :first_name, class: "form-control", placeholder: "First name" %>
+         </p>
+      </div>
+      <div class="form-group col-md-4">
+       <p>
+         <%= f.label :'Surname' %>
+         <%= f.text_field :surname, class: "form-control", placeholder: "Surname" %>
+        </p>
+      </div>
+     <div class="form-group col-md-4">
+        <p>
+          <%= f.label :'Last name' %>
+          <%= f.text_field :last_name, class: "form-control", placeholder: "Last name" %>
+        </p>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+        <p>
+          <%= f.label :'Nationality' %>
+          <%= f.text_field :nationality, class: "form-control", placeholder: "Nationality" %>
+        </p>
+      </div>
+      <div class="form-group col-md-4 field">
+          <%= f.label :'Marital status' %>
+         <%= f.select :marital_status, options_for_select(["Select one","Single","Married"]), {}, class: "form-control" %>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-4 field" >
+        <p>
+          <%= f.label :'Passport no' %>
+          <%= f.text_field :passport_no, class: "form-control", placeholder: "Passport no" %>
+        </p>
+      </div>
+      <div class="form-group col-md-4 field" >
+        <p>
+          <%= f.label :'Passport expiry' %>
+          <%= f.date_field :passport_expiry, class: "form-control", placeholder: "Passport Expiry" %>
+        </p>
+      </div>
+      <div class="form-group col-md-4 field">
+        <%= f.label :'Visa Category' %>
+        <%= f.select :visa_category, options_for_select(["Select one","Visitor","Immigration", "Study", "Work"]), {}, class: "form-control" %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-4 field">
+        <p>
+          <%= f.label :'Date&time' %>
+          <%= f.datetime_field :date_time, class: "form-control", placeholder: "Passport no" %>
+        </p>
+      </div>
+      <div class="form-group col-md-4 field">
+        <p>
+          <%= f.label :'Application status' %>
+          <%= f.select :application_status, options_for_select(["Select one","Started","Processing","Complete"]), {}, class: "form-control" %>
+        </p>
+      </div>
+    </div>
+    <div style="text-align: center;">
+        <p>
+          <%= f.submit 'submit', class: "btn btn-dark"%>
+        </p>
+    </div>
+    <%end%>
+ </div>
+</div>
