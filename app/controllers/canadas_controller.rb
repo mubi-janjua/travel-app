@@ -55,7 +55,7 @@ class CanadasController < ApplicationController
     @canada = Canada.find(params[:id])
     @canada.destroy
 
-    redirect_to canada_main_path
+    redirect_to canada_main_path(:can)
   end
 
   private

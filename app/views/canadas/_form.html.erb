@@ -82,7 +82,8 @@
       <div class="form-group col-md-4 field">
         <p>
           <%= f.label :'Application status' %>
-          <%= f.select :application_status, options_for_select(["Select one","Started","Processing","Complete"]), {}, class: "form-control" %>
+          <%= f.text_field :application_status, class: "form-control" %>
+        <!--    <%= f.select :application_status, options_for_select(["Select one","Started","Processing","Complete", "Other"]), {}, class: "form-control" %> -->
         </p>
       </div>
     </div>

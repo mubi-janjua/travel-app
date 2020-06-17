@@ -1,12 +1,48 @@
 <body style="overflow-x: hidden;">
+  <div>
   <div class="pic1">
     <%= link_to canadas_path do %>
-      <%= image_tag "2" %>
+    <%= image_tag "2" %>
     <%end%>
   </div>
 
+  </div>
+  <div style="margin-left: 501px;">
+    <%= image_tag "we", class: "mySlides"%>
+    <%= image_tag "visi", class: "mySlides"%>
+    <%= image_tag "imii", class: "mySlides"%>
+    <%= image_tag "study", class: "mySlides"%>
+    <%= image_tag "wok", class: "mySlides"%>
+  </div>
+
+  <script type="text/javascript">
+    var myIndex = 0;
+    carousel();
+
+    function carousel()
+    {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 1000); // Change image every 2 seconds
+    }
+  </script>
+
   <p  class="pic2"></p>
-  <div class="dropdown-show">
+  <div>
+    <marquee direction="right">
+      <div>
+        <span>Tamim dari.||</span>&nbsp;
+        <span>tamim dari</span>
+      </div>
+    </marquee direction="right">
+  </div>
+  <div class="dropdown-show" style="margin-top: -46px;">
     <a class="btn btn-light dropdown-toggle" href="#" role="button" id="             dropdownMenuLink" data-toggle="dropdown">
       Menu
     </a>
@@ -20,96 +56,95 @@
 
       <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
     </div>
+
   </div>
   <div class="pic3">
 
     <%= image_tag "02" %>
   </div>
-      <div class="container">
-        <div class="wb-eight row wb-init">
-          <div class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
-            <h3 >Jobs</h3>
-            <p class="a"></p>
-            <p>Find a job, training, hiring programs,
-            work permits, Social Insurance Number (SIN)</p>
-          </div>
-          <div class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
-            <h3>Immigration&citizenship</h3>
-            <p class="b"></p>
-            <p>Visit, work, study, immigrate, refugees, permanent residents, apply, check status</p>
-          </div>
-          <div class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
-            <h3>Travel and Tourism</h3>
-            <p class="c"></p>
-            <p>In Canada or abroad, advice, advisories, passports, visit Canada, events, attractions</p>
-          </div>
-          <div class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
-            <h3>Business And Industry</h3>
-            <p class="d"></p>
-            <p>Starting a business, permits, copyright, business support, selling to government</p>
-          </div>
-          <div class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
-            <h3>Benefits</h3>
-            <p class="e"></p>
-            <p>EI, family and sickness leave, pensions, housing, student aid, disabilities</p>
-          </div>
-          <div  class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
-            <h3>Health</h3>
-            <p class="f"></p>
-            <p>Food, nutrition, diseases, vaccines, drugs, product safety and recalls</p>
+    <div class="container">
+      <div class="wb-eight row wb-init">
+      <div class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
+        <h3 >Jobs</h3>
+        <p class="a"></p>
+        <p>Find a job, training, hiring programs,
+        work permits, Social Insurance Number (SIN)</p>
+      </div>
+      <div class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
+        <h3>Immigration&citizenship</h3>
+        <p class="b"></p>
+        <p>Visit, work, study, immigrate, refugees, permanent residents, apply, check status</p>
+      </div>
+      <div class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
+        <h3>Travel and Tourism</h3>
+        <p class="c"></p>
+        <p>In Canada or abroad, advice, advisories, passports, visit Canada, events, attractions</p>
+      </div>
+      <div class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
+        <h3>Business And Industry</h3>
+        <p class="d"></p>
+        <p>Starting a business, permits, copyright, business support, selling to government</p>
+      </div>
+      <div class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
+        <h3>Benefits</h3>
+        <p class="e"></p>
+        <p>EI, family and sickness leave, pensions, housing, student aid, disabilities</p>
+      </div>
+      <div  class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
+        <h3>Health</h3>
+        <p class="f"></p>
+        <p>Food, nutrition, diseases, vaccines, drugs, product safety and recalls</p>
+      </div>
+    </div>
+    <div class="mwsgeneric-base-html parbase section" id="n">
+      <section class="home-your-gov gc-srvinfo well well-sm brdr-0">
+        <div class="container" id="mm">
+          <h2>Visa apply</h2>
+          <div class="row mrgn-bttm-lg">
+            <div class="col-lg-7 col-xs-12 col-md-6">
+              <div class="wb-eqt row wb-init">
+                <div class="col-lg-6" style="vertical-align: top; min-height: 113px;">
+                  <h3><%= link_to "Contact us", canada_contact_us_path(:can), class: "j", target: "_blank" %></h3>
+                  <p class="aa"></p>
+                  <p>agency contacts,</p>
+                </div>
+                <div class="col-lg-6" style="vertical-align: top; min-height: 113px;">
+                  <h3><%= link_to "Canada.ca", 'https://www.canada.ca/en.html', class: "j", target: "_blank"%></h3>
+                  <p class="aa"></p>
+                  <p>Canada Immigration website</p>
+                </div>
+                <div class="col-lg-6" style="vertical-align: top; min-height: 113px;">
+                      <h3><%= link_to "Alberta.ca", 'https://www.alberta.ca/immigration.aspx', class: "j", target: "_blank"%></h3>
+                  <p class="aa"></p>
+                  <p>Alberta Home Office and Immigration</p>
+                </div>
+                <div class="col-lg-6" style="vertical-align: top; min-height: 113px;">
+                  <h3><%= link_to "Ontario.ca", 'https://www.ontario.ca/page/citizenship-and-immigration', class: "j", target: "_blank"%></h3>
+                  <p class="aa"></p>
+                  <p>Ontario Home Office and Immigration</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-            <div class="mwsgeneric-base-html parbase section" id="n">
-              <section class="home-your-gov gc-srvinfo well well-sm brdr-0">
-                <div class="container" id="mm">
-                  <h2>Visa apply</h2>
-                  <div class="row mrgn-bttm-lg">
-                   <div class="col-lg-7 col-xs-12 col-md-6">
-                     <div class="wb-eqt row wb-init">
-                        <div class="col-lg-6" style="vertical-align: top; min-height: 113px;">
-                          <h3>Contact us</h3>
-                          <p class="aa"></p>
-                          <p>Department and agency contacts, change your address</p>
-                        </div>
-                          <div class="col-lg-6" style="vertical-align: top; min-height: 113px;">
-                          <h3>Canada.ca</h3>
-                          <p class="aa"></p>
-                          <p>Department and agency contacts, change your address</p>
-                        </div>
-                          <div class="col-lg-6" style="vertical-align: top; min-height: 113px;">
-                            <h3>Canada.ca</h3>
-                            <p class="aa"></p>
-                            <p>Department and agency contacts, change your address</p>
-                          </div>
-                          <div class="col-lg-6" style="vertical-align: top; min-height: 113px;">
-                              <h3>Canada.ca</h3>
-                              <p class="aa"></p>
-                              <p>Department and agency contacts, change your address</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-              </div>
-              <p class="mj"></p>
-                <div class="brand">
-                  <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
-                    <div class="row">
-                      <nav class="col-sm-10 ftr-urlt-lnk">
-                        <ul class="list-group flex-md-row" style="margin-top: 18px; ">
-                          <li style="margin-right: 27px;">social-media</li>
-                          <li style="margin-right: 27px;">Mobile-Application</li>
-                          <li style="margin-right: 27px;">canada.ca</li>
-                          <li style="margin-right: 27px;">Term&condition</li>
-                          <li>Privacy</li>
-                        </ul>
-                      </nav>
-                      <div class="col-xs-6 col-md-2 text-right">
-                       <%= image_tag "last"%>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      </section>
+    </div>
+    <p class="mj"></p>
+    <div class="brand">
+      <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
+        <div class="row">
+          <nav class="col-sm-10 ftr-urlt-lnk">
+            <ul class="list-group flex-md-row">
+              <li style="margin-right: 27px;">social-media</li>
+              <li style="margin-right: 27px;">Mobile-Application</li>
+              <li style="margin-right: 27px;">canada.ca</li>
+              <li style="margin-right: 27px;">Term&condition</li>
+              <li>Privacy</li>
+            </ul>
+          </nav>
+        <div class="col-xs-6 col-md-2 text-right">
+        <%= image_tag "last"%>
       </div>
+    </div>
+  </div>
 </body>

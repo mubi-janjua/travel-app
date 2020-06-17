@@ -5,8 +5,43 @@
     <%end%>
   </div>
 
+  <div style="margin-left: 501px;">
+    <%= image_tag "we", class: "mySlides"%>
+    <%= image_tag "visi", class: "mySlides"%>
+    <%= image_tag "imii", class: "mySlides"%>
+    <%= image_tag "study", class: "mySlides"%>
+    <%= image_tag "wok", class: "mySlides"%>
+  </div>
+
+  <script type="text/javascript">
+    var myIndex = 0;
+    carousel();
+
+    function carousel()
+    {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 1000); // Change image every 2 seconds
+    }
+  </script>
+
   <p  class="pic2"></p>
-  <div class="dropdown-show">
+    <div>
+    <marquee direction="right">
+      <div>
+        <span>Tamim dari.||</span>&nbsp;
+        <span>tamim dari</span>
+      </div>
+    </marquee>
+  </div>
+
+  <div class="dropdown-show" style="margin-top: -46px;">
     <a class="btn btn-light dropdown-toggle" href="#" role="button" id="                            dropdownMenuLink" data-toggle="dropdown">Menu
     </a>
 
@@ -31,10 +66,10 @@
       <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
         <div class="row">
           <nav class="col-sm-10 ftr-urlt-lnk">
-            <ul class="list-group flex-md-row" style="margin-top: 18px; ">
+            <ul class="list-group flex-md-row" style="margin-top: 30px;">
               <li style="margin-right: 27px;">social-media</li>
               <li style="margin-right: 27px;">Mobile-Application</li>
-              <li style="margin-right: 27px;">canada.ca</li>
+              <li style="margin-right: 27px;">canad.ca</li>
               <li style="margin-right: 27px;">Term&condition</li>
               <li>Privacy</li>
             </ul>

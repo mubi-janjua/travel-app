@@ -1,30 +1,68 @@
 <body style="overflow-x: hidden;">
-<div class="pic1">
-  <%= link_to canadas_path do %>
-    <%= image_tag "2" %>
-  <%end%>
-</div>
-
-<p  class="pic2"></p>
-<div class="dropdown-show">
-  <a class="btn btn-light dropdown-toggle" href="#" role="button" id="             dropdownMenuLink" data-toggle="dropdown">
-    Menu
-  </a>
-
-  <div class="dropdown-menu" >
-    <%= link_to 'visit', canada_visit_path(:visa), class: "dropdown-item" %>
-
-    <%= link_to 'immigrant', canada_immigrant_path(:visa), class: "dropdown-item" %>
-
-    <%= link_to 'study', canada_study_path(:visa), class: "dropdown-item" %>
-
-    <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
+  <div class="pic1">
+    <%= link_to canadas_path do %>
+      <%= image_tag "2" %>
+    <%end%>
   </div>
-</div>
-<div class="container">
+
+  <div style="margin-left: 501px;">
+    <%= image_tag "we", class: "mySlides"%>
+    <%= image_tag "visi", class: "mySlides"%>
+    <%= image_tag "imii", class: "mySlides"%>
+    <%= image_tag "study", class: "mySlides"%>
+    <%= image_tag "wok", class: "mySlides"%>
+  </div>
+
+  <script type="text/javascript">
+    var myIndex = 0;
+    carousel();
+
+    function carousel()
+    {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 1000); // Change image every 2 seconds
+    }
+  </script>
+
+
+ <p  class="pic2"></p>
+  <div>
+    <marquee direction="right">
+      <div>
+        <span>Tamim dari.||</span>&nbsp;
+        <span>tamim dari</span>
+      </div>
+    </marquee>
+  </div>
+
+ <div class="dropdown-show" style="margin-top: -46px;">
+    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="                             dropdownMenuLink" data-toggle="dropdown"> Menu
+    </a>
+
+    <div class="dropdown-menu" >
+      <%= link_to 'visit', canada_visit_path(:visa), class: "dropdown-item" %>
+
+      <%= link_to 'immigrant', canada_immigrant_path(:visa), class: "dropdown-item" %>
+
+      <%= link_to 'study', canada_study_path(:visa), class: "dropdown-item" %>
+
+      <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
+    </div>
+  </div>
+  <div class="container">
     <div class="col-lg-6" style="vertical-align: top; min-height: 113px;">
       <h1 class="kk">Visitor:visa Canada</h1>
       <p class="jj"></p>
+      <div class="col-md-6 mrgn-tp-md hidden-sm hidden-xs op6">
+        <%= image_tag "visit" %>
+      </div>
       <h2><strong>Eligibility</strong></h2>
       <p>You must meet some basic requirements to get a visitor visa. You must:</p>
       <ul>
@@ -58,23 +96,22 @@
     <div style="text-align: center;">
       <%= link_to "Apply now", new_canada_path, class: "btn btn-dark"  %>
     </div>
-                    <div class="brand">
-                <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
-                  <div class="row">
-                    <nav class="col-sm-10 ftr-urlt-lnk">
-                      <ul class="list-group flex-md-row" style="margin-top: 18px; ">
-                        <li style="margin-right: 27px;">social-media</li>
-                        <li style="margin-right: 27px;">Mobile-Application</li>
-                        <li style="margin-right: 27px;">canada.ca</li>
-                        <li style="margin-right: 27px;">Term&condition</li>
-                        <li>Privacy</li>
-                      </ul>
-                    </nav>
-                    <div class="col-xs-6 col-md-2 text-right">
-                     <%= image_tag "last"%>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <div class="brand">
+      <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
+        <div class="row">
+          <nav class="col-sm-10 ftr-urlt-lnk">
+            <ul class="list-group flex-md-row">
+              <li style="margin-right: 27px;">social-media</li>
+              <li style="margin-right: 27px;">Mobile-Application</li>
+              <li style="margin-right: 27px;">canada.ca</li>
+              <li style="margin-right: 27px;">Term&condition</li>
+              <li>Privacy</li>
+            </ul>
+          </nav>
+          <div class="col-xs-6 col-md-2 text-right">
+          <%= image_tag "last"%>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
