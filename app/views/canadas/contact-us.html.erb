@@ -1,10 +1,12 @@
 <body style="overflow-x: hidden;">
+  <div>
   <div class="pic1">
     <%= link_to canadas_path do %>
     <%= image_tag "2" %>
     <%end%>
   </div>
 
+  </div>
   <div style="margin-left: 501px;">
     <%= image_tag "we", class: "mySlides"%>
     <%= image_tag "visi", class: "mySlides"%>
@@ -32,17 +34,17 @@
   </script>
 
   <p  class="pic2"></p>
-    <div>
+  <div>
     <marquee>
       <div>
         <span>Tamim dari.||</span>&nbsp;
         <span>tamim dari</span>
       </div>
-    </marquee>
+    </marquee direction="right">
   </div>
-
   <div class="dropdown-show" style="margin-top: -46px;">
-    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="                            dropdownMenuLink" data-toggle="dropdown">Menu
+    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="             dropdownMenuLink" data-toggle="dropdown">
+      Menu
     </a>
 
     <div class="dropdown-menu" >
@@ -55,29 +57,38 @@
       <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
     </div>
   </div>
-  <div class="container">
-   <h1 class="oo">Apply for Canada:Visa</h1>
-
-   <%= render 'form' %>
-
-   <!-- <%= link_to 'Back', canada_main_path(:can) %> -->
+  <div style="margin-top: 30px;">
+    <%= image_tag "cnt", class: "ctc" %>
   </div>
-      <div class="brand">
+  <div class="container">
+    <h1 class="cnt1">Canada Immigration</h1>
+    <div style="margin-top: 1px;">
+      <p>
+        <h2>Managing Director</h2>
+        <h4>Imran Mumtaz</h4>
+      </p>
+       <h6>Office: (+92)-333-4002193<br>
+                  <span style="margin-left: 50px;">(+92)-305-4002193</span>
+       </h6>
+      <h6>cell: (+92)-335-0494585</h6>
+
+      <h6>Email: imran_amr@yahoo.com</h6>
+    </div>
+    <div class="brand" style="margin-top: 1px;">
       <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
         <div class="row">
           <nav class="col-sm-10 ftr-urlt-lnk">
-            <ul class="list-group flex-md-row" style="margin-top: 30px;">
+            <ul class="list-group flex-md-row">
               <li style="margin-right: 27px;">social-media</li>
               <li style="margin-right: 27px;">Mobile-Application</li>
-              <li style="margin-right: 27px;">canad.ca</li>
+              <li style="margin-right: 27px;">canada.ca</li>
               <li style="margin-right: 27px;">Term&condition</li>
               <li>Privacy</li>
             </ul>
           </nav>
-          <div class="col-xs-6 col-md-2 text-right">
-           <%= image_tag "last"%>
-          </div>
-        </div>
+        <div class="col-xs-6 col-md-2 text-right">
+        <%= image_tag "last"%>
       </div>
     </div>
+  </div>
 </body>

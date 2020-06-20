@@ -2,8 +2,15 @@ class CanadasController < ApplicationController
   def index
 
   end
+  def search
+    if params[:search]
+      @canada = Canada.search(params[:search]).order("application_no")
+    else
+      @canada = Canada.all.("application_no")
+    end
+  end
   def main
-  @canadas = Canada.all
+  @canadas = Canada.search(params[:search])
   end
 
   def immigrant

@@ -29,13 +29,13 @@
       myIndex++;
       if (myIndex > x.length) {myIndex = 1}
       x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 1000); // Change image every 2 seconds
+      setTimeout(carousel, 5000); // Change image every 2 seconds
     }
   </script>
 
   <p  class="pic2"></p>
   <div>
-    <marquee direction="right">
+    <marquee>
       <div>
         <span>Tamim dari.||</span>&nbsp;
         <span>tamim dari</span>
@@ -47,7 +47,7 @@
       Menu
     </a>
 
-    <div class="dropdown-menu" >
+    <div class="dropdown-menu" style="width: 1px;" >
       <%= link_to 'visit', canada_visit_path(:visa), class: "dropdown-item" %>
 
       <%= link_to 'immigrant', canada_immigrant_path(:visa), class: "dropdown-item" %>
@@ -59,7 +59,6 @@
 
   </div>
   <div class="pic3">
-
     <%= image_tag "02" %>
   </div>
     <div class="container">
@@ -130,7 +129,20 @@
       </section>
     </div>
     <p class="mj"></p>
-    <div class="brand">
+    <div>
+    <p class="float-right sin">
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path %> |
+  <%= link_to "Login", new_user_session_path %>
+<% end %>
+</p>
+
+</div>
+    <div class="brand" style="margin-top: 144px;">
       <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
         <div class="row">
           <nav class="col-sm-10 ftr-urlt-lnk">

@@ -27,13 +27,13 @@
       myIndex++;
       if (myIndex > x.length) {myIndex = 1}
       x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 1000); // Change image every 2 seconds
+      setTimeout(carousel, 5000); // Change image every 2 seconds
     }
   </script>
-
-  <p  class="pic2"></p>
   <div>
-    <marquee direction="right">
+    <p  class="pic2"></p>
+  <div>
+    <marquee>
       <div>
         <span>Tamim dari.||</span>&nbsp;
         <span>tamim dari</span>
@@ -55,13 +55,23 @@
       <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
     </div>
   </div>
-  <div class="container">
+  <div class="container" style="margin-top: -43px;">
    <h1 class="oo">List of all customer Canada</h1>
-
-    <%= link_to 'New Apply', new_canada_path %><br><br>
+    <div class="row">
+      <div  class="form-group col-md-3">
+        <%= link_to 'New Apply', new_canada_path %><br><br>
+      </div>
+      <div  class="form-group col-md-3" style="margin-left: 33em;">
+      <%= form_tag search_canadas_path(:can), :method => 'get' do %>
+      <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search" %>
+      <%= submit_tag "search", class: " btn btn-dark sch" %>
+      </div>
+      <% end %>
+    </div>
     <div class="table-responsive">
       <table class="table">
         <tr>
+          <th>Application no</th>
           <th>First Name</th>
           <th>Nationality</th>
           <th>Passport no</th>
@@ -70,6 +80,7 @@
         </tr>
         <% @canadas.each do |canada| %>
         <tr>
+          <td><%= canada.application_no %></td>
           <td><%= canada.first_name %></td>
           <td><%= canada.nationality %></td>
           <td><%= canada.passport_no %></td>
