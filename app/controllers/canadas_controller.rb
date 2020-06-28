@@ -1,4 +1,5 @@
 class CanadasController < ApplicationController
+   before_action :authenticate_user!, only:[:main]
   def index
 
   end
@@ -10,6 +11,7 @@ class CanadasController < ApplicationController
     end
   end
   def main
+
   @canadas = Canada.search(params[:search])
   end
 
