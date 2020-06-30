@@ -1,11 +1,12 @@
 <body style="overflow-x: hidden;">
   <div class="container">
     <div class="row">
-      <div class="cd">
-        <%= image_tag "canad" %>
+         <h1 class="oq">Canada Immigration & Visa</h1>
+      <div class="cd col-md-9">
+        <%= image_tag "canad", class: "img-fluid" %>
       </div>
-      <h1 class="oq">Canada Immigration & Visa</h1>
-      <div class="wq">
+
+      <div class="wq col-md-3">
        <h2 style="font: italic bold 50px Georgia, serif;">Log in</h2>
 
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
