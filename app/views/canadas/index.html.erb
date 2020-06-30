@@ -1,7 +1,8 @@
 <body style="overflow-x: hidden;">
+  <header>
   <div class="pic1">
     <%= link_to canadas_path do %>
-      <%= image_tag "can1" %>
+      <%= image_tag "can1", class: "image-responsive" %>
     <%end%>
   </div>
 
@@ -12,7 +13,7 @@
     <%= image_tag "study", class: "mySlides"%>
     <%= image_tag "wok", class: "mySlides"%>
   </div>
-
+</header>
   <script type="text/javascript">
     var myIndex = 0;
     carousel();
@@ -42,8 +43,8 @@
         <span> Study visa |</span>&nbsp;
         <span>Immigration |</span>&nbsp;
         <span>Visit Visa |</span>&nbsp;
-        <span>Work Permit Visa |</span>&nbsp;
-        <span>Best Place to get Any Type of Canada Visa</span>
+        <span>Work permit Visa |</span>&nbsp;
+        <span>Best place to get Any Type of Canada Visa</span>
       </div>
     </marquee>
   </div>
@@ -61,9 +62,10 @@
 
       <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
     </div>
-
-      <div style="margin-left: -30px; margin-top: 20px;">
-        <%= image_tag "02" %>
+       <div class="row">
+      <div style="margin-left: -30px; margin-top: 20px;" class="col-xs-7">
+        <%= image_tag "02", class: "img-fluid"%>
+      </div>
       </div>
     <div class="container">
       <div class="wb-eight row wb-init">

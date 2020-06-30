@@ -1,7 +1,9 @@
 @import "bootstrap";
 @import "tether";
-
-
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 .pic1{
   padding: 40px;
 }
