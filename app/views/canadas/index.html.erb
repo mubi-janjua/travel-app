@@ -1,21 +1,18 @@
 <body style="overflow-x: hidden;">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-9 col-sm-5 col-md-4" style="margin-top: 47px; margin-left: -21px;">
-        <%= link_to canadas_path do %>
-        <%= image_tag "can1"%>
-       <%end%>
-     </div>
-  <div  class="col-xs-9 col-sm-5 col-md-4" style="margin-left: 410px; margin-top: 30px;">
+  <div class="pic1">
+    <%= link_to canadas_path do %>
+      <%= image_tag "can1" %>
+    <%end%>
+  </div>
 
+  <div style="margin-left: 501px;">
     <%= image_tag "we", class: "mySlides"%>
     <%= image_tag "visi", class: "mySlides"%>
     <%= image_tag "imii", class: "mySlides"%>
     <%= image_tag "study", class: "mySlides"%>
     <%= image_tag "wok", class: "mySlides"%>
-
   </div>
-</div>
+
   <script type="text/javascript">
     var myIndex = 0;
     carousel();
@@ -34,25 +31,25 @@
     }
   </script>
 
-  <p  class="pic2"></p>
+
+ <p  class="pic2"></p>
   <div>
     <marquee>
-      <div>
         <span>Avail your canada visa from here |</span>&nbsp;
         <span> Study visa |</span>&nbsp;
         <span>Immigration |</span>&nbsp;
-        <span>Visit visa |</span>&nbsp;
-        <span>Work permit Visa |</span>&nbsp;
-        <span>Best place to get any type of canada visa</span>
+        <span>Visit Visa |</span>&nbsp;
+        <span>Work Permit Visa |</span>&nbsp;
+        <span>Best Place to get Any Type of Canada Visa</span>
       </div>
-    </marquee direction="right">
+    </marquee>
   </div>
-  <div class="dropdown-show" style="margin-top: -46px; margin-left: -22px">
-    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="             dropdownMenuLink" data-toggle="dropdown">
-      Menu
+
+  <div class="dropdown-show" style="margin-top: -46px;">
+    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="                             dropdownMenuLink" data-toggle="dropdown"> Menu
     </a>
 
-    <div class="dropdown-menu" style="width: 1px;" >
+    <div class="dropdown-menu" >
       <%= link_to 'visit', canada_visit_path(:visa), class: "dropdown-item" %>
 
       <%= link_to 'immigrant', canada_immigrant_path(:visa), class: "dropdown-item" %>
@@ -62,10 +59,9 @@
       <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
     </div>
 
-  </div>
-  <div class="pic3">
-    <%= image_tag "02" %>
-  </div>
+      <div style="margin-left: -30px; margin-top: 20px;">
+        <%= image_tag "02" %>
+      </div>
     <div class="container">
       <div class="wb-eight row wb-init">
       <div class="col-lg-4 col-md-6" style="vertical-align: top; min-height: 113px;">
