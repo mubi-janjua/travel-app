@@ -1,13 +1,17 @@
 <body style="overflow-x: hidden;">
-  <div class="container">
+  <div class="container" style="width: 100%;">
     <div class="row">
-         <h1 class="oq">Canada Immigration & Visa</h1>
-      <div class="cd col-md-9">
-        <%= image_tag "canad", class: "img-fluid" %>
+      <div class="col-md-12">
+       <h1 class="oq">Canada Immigration & Visa</h1>
+      </div>
       </div>
 
-      <div class="wq col-md-3">
-       <h2 style="font: italic bold 50px Georgia, serif;">Log in</h2>
+      <div class="row">
+        <div class="col-md-12"> <h2 style="font: italic bold 50px Georgia, serif;">Log in</h2></div>
+      </div>
+        <div class="row">
+
+          <div class="col-md-3">
 
         <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <div class="form-inputs">
@@ -24,9 +28,18 @@
           <div class="btn btn-light", style="width: 120px;">
             <%= f.button :submit, "Log in", class: "am" %>
           </div>
-      </div>
+
       <% end %>
     </div>
-    <%= render "devise/shared/links" %>
+                <div class="col-md-6">
+              <%= image_tag "canad" %>
+          </div>
+        </div>
+     <div class="row">
+       <div class="col-md-12">
+           <%= render "devise/shared/links" %>
+       </div>
+     </div>
+
   </div>
 </body>
