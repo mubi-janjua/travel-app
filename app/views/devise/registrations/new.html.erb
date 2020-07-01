@@ -1,36 +1,49 @@
 <body style="overflow-x: hidden;">
   <div class="container">
+
     <div class="row">
-          <div class="cd">
-            <%= image_tag "canad" %>
+      <div class="col-md-12">
+       <h1 class="oq" style="text-align: center;">Canada Immigration & Visa</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2 style="font: italic bold 50px Georgia, serif;">Sign up</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+          <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <%= f.error_notification %>
+          <div class="form-inputs">
+            <%= f.input :email,
+                        required: true,
+                        autofocus: true,
+                        input_html: { autocomplete: "email" }%>
+            <%= f.input :password,
+                        required: true,
+                        hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                        input_html: { autocomplete: "new-password" } %>
+            <%= f.input :password_confirmation,
+                        required: true,
+                        input_html: { autocomplete: "new-password" } %>
           </div>
-          <h1 class="oq">Canada Immigration & Visa</h1>
-          <div class="wq">
-          <h2 style="font: italic bold 50px Georgia, serif;">Sign up</h2>
-
-                <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-            <%= f.error_notification %>
-
-      <div class="form-inputs">
-        <%= f.input :email,
-                    required: true,
-                    autofocus: true,
-                    input_html: { autocomplete: "email" }%>
-        <%= f.input :password,
-                    required: true,
-                    hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                    input_html: { autocomplete: "new-password" } %>
-        <%= f.input :password_confirmation,
-                    required: true,
-                    input_html: { autocomplete: "new-password" } %>
+          <div class="btn btn-light", style="width: 120px;">
+           <%= f.button :submit, "Sign up" %>
+          </div>
+        <% end %>
       </div>
-
-      <div class="btn btn-light", style="width: 120px;">
-        <%= f.button :submit, "Sign up" %>
+      <div class="col-md-8">
+        <%= image_tag "canad", class: "img-fluid" %>
       </div>
     </div>
-     <% end %>
+
+    <div class="row">
+     <div>
+       <%= render "devise/shared/links" %>
+      </div>
     </div>
-    <%= render "devise/shared/links" %>
   </div>
 </body>
