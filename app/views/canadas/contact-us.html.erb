@@ -1,20 +1,20 @@
 <body style="overflow-x: hidden;">
-  <div>
-  <div class="pic1">
+<div class="container">
+  <div class="row" style="margin-top: -32px;">
+    <div class="col-md-3 o1  img-fluid">
     <%= link_to canadas_path do %>
-    <%= image_tag "can1" %>
+      <%= image_tag "can1"%>
     <%end%>
+</div>
+<div class="col-md-9 o2" style="padding: 0px;">
+    <%= image_tag "we", class: "mySlides img-fluid"%>
+    <%= image_tag "visi", class: "mySlides img-fluid"%>
+    <%= image_tag "imii", class: "mySlides img-fluid"%>
+    <%= image_tag "study", class: "mySlides img-fluid"%>
+    <%= image_tag "wok", class: "mySlides img-fluid"%>
   </div>
-
-  </div>
-  <div style="margin-left: 501px;">
-    <%= image_tag "we", class: "mySlides"%>
-    <%= image_tag "visi", class: "mySlides"%>
-    <%= image_tag "imii", class: "mySlides"%>
-    <%= image_tag "study", class: "mySlides"%>
-    <%= image_tag "wok", class: "mySlides"%>
-  </div>
-
+</div>
+</div>
   <script type="text/javascript">
     var myIndex = 0;
     carousel();
@@ -33,22 +33,15 @@
     }
   </script>
 
-  <p  class="pic2"></p>
-  <div>
-    <marquee>
-      <div>
-        <span>Avail your canada visa from here |</span>&nbsp;
-        <span> Study visa |</span>&nbsp;
-        <span>Immigration |</span>&nbsp;
-        <span>Visit Visa |</span>&nbsp;
-        <span>Work Permit Visa |</span>&nbsp;
-        <span>Best Place to get Any Type of Canada Visa</span>
-      </div>
-    </marquee direction="right">
+  <div class="row">
+    <div class="col-md-12" style="margin-top: -51px;">
+   <p  class="pic2"></p>
+   </div>
   </div>
-  <div class="dropdown-show" style="margin-top: -46px;">
-    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="             dropdownMenuLink" data-toggle="dropdown">
-      Menu
+  <div style="margin-top: -74px;" class="row">
+    <div class="col-md-4">
+  <div class="dropdown-show" style="margin-top: -15px;">
+    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="                             dropdownMenuLink" data-toggle="dropdown"> Menu
     </a>
 
     <div class="dropdown-menu" >
@@ -61,39 +54,56 @@
       <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
     </div>
   </div>
-  <div style="margin-top: 30px;">
-    <%= image_tag "cnt", class: "ctc" %>
   </div>
-  <div class="container">
-    <h1 class="cnt1">Canada Immigration</h1>
-    <div style="margin-top: 1px;">
-      <p>
-        <h2>Managing Director</h2>
-        <h4>Imran Mumtaz</h4>
-      </p>
-       <h6>Office: (+92)-333-4002193<br>
-                  <span style="margin-left: 50px;">(+92)-305-4002193</span>
-       </h6>
-      <h6>cell: (+92)-335-0494585</h6>
+    <div class="col-md-8">
+       <div class="container">
+    <marquee>
+        <span>Avail your canada visa from here |</span>&nbsp;
+        <span> Study visa |</span>&nbsp;
+        <span>Immigration |</span>&nbsp;
+        <span>Visit Visa |</span>&nbsp;
+        <span>Work permit Visa |</span>&nbsp;
+        <span>Best place to get any type of canada visa</span>
+    </marquee>
+  </div>
+  </div>
+</div>
+       <div class="row">
+      <div style="margin-top: 20px; margin-left: 6px;" class="col-md-12">
+        <%= image_tag "cnt", class: "img-fluid"%>
+      </div>
+      </div>
+    <div class="container">
+      <h1 class="cnt1">Canada Immigration</h1>
+      <div style="margin-top: 1px;">
+        <p>
+          <h2>Managing Director</h2>
+          <h4>Imran Mumtaz</h4>
+        </p>
+         <h6>Office: (+92)-333-4002193<br>
+                    <span style="margin-left: 50px;">(+92)-305-4002193</span>
+         </h6>
+        <h6>cell: (+92)-335-0494585</h6>
 
-      <h6>Email: imran_amr@yahoo.com</h6>
-    </div>
-    <div class="brand" style="margin-top: 1px;">
-      <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
-        <div class="row">
-          <nav class="col-sm-10 ftr-urlt-lnk">
-            <ul class="list-group flex-md-row">
-              <li style="margin-right: 27px;">social-media</li>
-              <li style="margin-right: 27px;">Mobile-Application</li>
-              <li style="margin-right: 27px;">canada.ca</li>
-              <li style="margin-right: 27px;">Term&condition</li>
-              <li>Privacy</li>
-            </ul>
-          </nav>
-        <div class="col-xs-6 col-md-2 text-right">
-        <%= link_to canada_main_path(:can) do %>
-        <%= image_tag "last"%>
-        <%end %>
+        <h6>Email: imran_amr@yahoo.com</h6>
+      </div>
+      <div class="brand" style="margin-top: 1px;">
+        <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
+          <div class="row">
+            <nav class="col-sm-10 ftr-urlt-lnk">
+              <ul class="list-group flex-md-row">
+                <li style="margin-right: 27px;">social-media</li>
+                <li style="margin-right: 27px;">Mobile-Application</li>
+                <li style="margin-right: 27px;">canada.ca</li>
+                <li style="margin-right: 27px;">Term&condition</li>
+                <li>Privacy</li>
+              </ul>
+            </nav>
+          <div class="col-xs-6 col-md-2 text-right" style="margin-left: -73px;">
+          <%= link_to canada_main_path(:can) do %>
+          <%= image_tag "last"%>
+          <%end %>
+        </div>
       </div>
     </div>
   </div>
