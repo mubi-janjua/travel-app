@@ -1,80 +1,106 @@
 <body style="overflow-x: hidden;">
-  <div class="pic1">
-    <%= link_to canadas_path do %>
-    <%= image_tag "can1" %>
-
-    <%end%>
-  </div>
-
-  <div style="margin-left: 501px;">
-    <%= image_tag "we", class: "mySlides"%>
-    <%= image_tag "visi", class: "mySlides"%>
-    <%= image_tag "imii", class: "mySlides"%>
-    <%= image_tag "study", class: "mySlides"%>
-    <%= image_tag "wok", class: "mySlides"%>
-  </div>
-
-  <script type="text/javascript">
-    var myIndex = 0;
-    carousel();
-
-    function carousel()
-    {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}
-      x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 5000); // Change image every 2 seconds
-    }
-  </script>
-
-  <p  class="pic2"></p>
-  <div>
-    <marquee>
-      <div>
-        <span>Avail your canada visa from here |</span>&nbsp;
-        <span> Study visa |</span>&nbsp;
-        <span>Immigration |</span>&nbsp;
-        <span>Visit Visa |</span>&nbsp;
-        <span>Work Permit Visa |</span>&nbsp;
-        <span>Best Place to get Any Type of Canada Visa</span>
-      </div>
-    </marquee>
-  </div>
-
-  <div class="dropdown-show" style="margin-top: -46px;">
-    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="                            dropdownMenuLink" data-toggle="dropdown">Menu
-    </a>
-
-    <div class="dropdown-menu" >
-      <%= link_to 'visit', canada_visit_path(:visa), class: "dropdown-item" %>
-
-      <%= link_to 'immigrant', canada_immigrant_path(:visa), class: "dropdown-item" %>
-
-      <%= link_to 'study', canada_study_path(:visa), class: "dropdown-item" %>
-
-      <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
-    </div>
-  </div>
   <div class="container">
+    <div class="row" style="margin-top: -32px;">
+      <div class="col-md-3 o1  img-fluid">
+        <%= link_to canadas_path do %>
+         <%= image_tag "can1"%>
+        <%end%>
+      </div>
+      <div class="col-md-9 o2" style="padding: 0px;">
+        <%= image_tag "we", class: "mySlides img-fluid"%>
+        <%= image_tag "visi", class: "mySlides img-fluid"%>
+        <%= image_tag "imii", class: "mySlides img-fluid"%>
+        <%= image_tag "study", class: "mySlides img-fluid"%>
+        <%= image_tag "wok", class: "mySlides img-fluid"%>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var myIndex = 0;
+      carousel();
+
+      function carousel()
+      {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++)
+        {
+         x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 5000); // Change image every 2 seconds
+      }
+    </script>
+    <div class="row">
+      <div class="col-md-12" style="margin-top: -51px;">
+        <p  class="pic2"></p>
+      </div>
+    </div>
+
+    <div style="margin-top: -74px;" class="row">
+      <div class="col-md-4">
+        <div class="dropdown-show" style="margin-top: -15px;  margin-left: -28px;">
+          <a class="btn btn-light dropdown-toggle" href="#" role="button" id="                               dropdownMenuLink" data-toggle="dropdown"> Menu
+          </a>
+          <div class="dropdown-menu" >
+            <%= link_to 'visit', canada_visit_path(:visa), class: "dropdown-item" %>
+            <%= link_to 'immigrant', canada_immigrant_path(:visa), class: "dropdown-item" %>
+            <%= link_to 'study', canada_study_path(:visa), class: "dropdown-item" %>
+            <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="container">
+          <marquee>
+            <span>Avail your canada visa from here |</span>&nbsp;
+            <span> Study visa |</span>&nbsp;
+            <span>Immigration |</span>&nbsp;
+            <span>Visit Visa |</span>&nbsp;
+            <span>Work permit Visa |</span>&nbsp;
+            <span>Best place to get any type of canada visa</span>
+          </marquee>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container">
+      <div class="mwscolumn section">
+        <div class="row" style="margin-top: 48px;">
+          <div class="col-md-5">
+            <div class="mwstitle section">
+              <h1 id="imi">Work in Canada</h1>
+              <p class="jk"></p>
+              <p>Apply to work in Canada, extend a work permit or hire a foreign worker.</p>
+            </div>
+          </div>
+          <div class="col-md-7">
+              <%= image_tag "work",class: "img-fluid" %>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--   <div class="container">
     <div class="mwscolumn section">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-5">
           <div class="mwstitle section">
             <h1 id="imi">Work in Canada</h1>
             <p class="jkk"></p>
             <p>Apply to work in Canada, extend a work permit or hire a foreign worker.</p>
           </div>
-          <div class="col-md-6 mrgn-tp-md hidden-sm hidden-xs op3">
-            <%= image_tag "work" %>
+          <div class="col-md-7">
+            <%= image_tag "imi"%>
           </div>
         </div>
       </div>
-    </div>
+    </div -->
   </div>
   <div class="container" style="margin-top: 30px;">
     <h2><strong>Canada Work Permit (Visa)</strong></h2>
@@ -125,7 +151,7 @@
               <li>Privacy</li>
             </ul>
           </nav>
-          <div class="col-xs-6 col-md-2 text-right">
+          <div class="col-xs-6 col-md-2 text-right" style="margin-left: -85px;">
            <%= link_to canada_main_path(:can) do %>
            <%= image_tag "last"%>
            <%end%>
@@ -133,5 +159,6 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </body>

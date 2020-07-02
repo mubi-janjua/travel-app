@@ -1,159 +1,172 @@
 <body style="overflow-x: hidden;">
-  <div class="pic1">
-    <%= link_to canadas_path do %>
-    <%= image_tag "can1" %>
-    <%end%>
-  </div>
-
-  <div style="margin-left: 501px;">
-    <%= image_tag "we", class: "mySlides"%>
-    <%= image_tag "visi", class: "mySlides"%>
-    <%= image_tag "imii", class: "mySlides"%>
-    <%= image_tag "study", class: "mySlides"%>
-    <%= image_tag "wok", class: "mySlides"%>
-  </div>
-
-  <script type="text/javascript">
-    var myIndex = 0;
-    carousel();
-
-    function carousel()
-    {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}
-      x[myIndex-1].style.display = "block";
-      setTimeout(carousel, 5000); // Change image every 2 seconds
-    }
-  </script>
-  <p  class="pic2"></p>
-
-  <div>
-    <marquee>
-        <span>Avail your canada visa from here |</span>&nbsp;
-        <span> Study visa |</span>&nbsp;
-        <span>Immigration |</span>&nbsp;
-        <span>Visit Visa |</span>&nbsp;
-        <span>Work Permit Visa |</span>&nbsp;
-        <span>Best Place to get Any Type of Canada Visa</span>
-      </div>
-    </marquee>
-  </div>
-  <div class="dropdown-show" style="margin-top: -46px;">
-    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="                            dropdownMenuLink" data-toggle="dropdown">Menu
-    </a>
-
-    <div class="dropdown-menu" >
-      <%= link_to 'visit', canada_visit_path(:visa), class: "dropdown-item" %>
-
-      <%= link_to 'immigrant', canada_immigrant_path(:visa), class: "dropdown-item" %>
-
-      <%= link_to 'study', canada_study_path(:visa), class: "dropdown-item" %>
-
-      <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
-    </div>
-  </div>
   <div class="container">
-    <div class="mwscolumn section">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="mwstitle section">
-            <h1 id="imi">study in Canada as an Internation student</h1>
-            <p class="jk"></p>
-            <p>Apply to study in Canada as an international student, extend your study permit and find out about working while you study or after you graduate.</p>
+    <div class="row" style="margin-top: -32px;">
+      <div class="col-md-3 o1  img-fluid">
+        <%= link_to canadas_path do %>
+         <%= image_tag "can1"%>
+        <%end%>
+      </div>
+      <div class="col-md-9 o2" style="padding: 0px;">
+        <%= image_tag "we", class: "mySlides img-fluid"%>
+        <%= image_tag "visi", class: "mySlides img-fluid"%>
+        <%= image_tag "imii", class: "mySlides img-fluid"%>
+        <%= image_tag "study", class: "mySlides img-fluid"%>
+        <%= image_tag "wok", class: "mySlides img-fluid"%>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var myIndex = 0;
+      carousel();
+
+      function carousel()
+      {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++)
+        {
+         x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 5000); // Change image every 2 seconds
+      }
+    </script>
+    <div class="row">
+      <div class="col-md-12" style="margin-top: -51px;">
+        <p  class="pic2"></p>
+      </div>
+    </div>
+
+    <div style="margin-top: -74px;" class="row">
+      <div class="col-md-4">
+        <div class="dropdown-show" style="margin-top: -15px;  margin-left: -28px;">
+          <a class="btn btn-light dropdown-toggle" href="#" role="button" id="                               dropdownMenuLink" data-toggle="dropdown"> Menu
+          </a>
+          <div class="dropdown-menu" >
+            <%= link_to 'visit', canada_visit_path(:visa), class: "dropdown-item" %>
+            <%= link_to 'immigrant', canada_immigrant_path(:visa), class: "dropdown-item" %>
+            <%= link_to 'study', canada_study_path(:visa), class: "dropdown-item" %>
+            <%= link_to 'work', canada_work_path(:visa), class: "dropdown-item" %>
           </div>
-          <div class="col-md-6 mrgn-tp-md hidden-sm hidden-xs op1">
-            <%= image_tag "std" %>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="container">
+          <marquee>
+            <span>Avail your canada visa from here |</span>&nbsp;
+            <span> Study visa |</span>&nbsp;
+            <span>Immigration |</span>&nbsp;
+            <span>Visit Visa |</span>&nbsp;
+            <span>Work permit Visa |</span>&nbsp;
+            <span>Best place to get any type of canada visa</span>
+          </marquee>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="mwscolumn section">
+        <div class="row" style="margin-top: 45px;">
+          <div class="col-md-5">
+            <div class="mwstitle section">
+              <h1 id="imi">study in Canada as an Internation student</h1>
+              <p class="jk"></p>
+              <p>Apply to study in Canada as an international student, extend your study permit and find out about working while you study or after you graduate.</p>
+            </div>
+          </div>
+          <div class="col-md-7">
+              <%= image_tag "std", class: "img-fluid" %>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container" style="margin-top: 30px;">
-    <p>The universities from Canada are preferred by more than <strong>130,000 international students yearly.</strong>  Offering a high-quality teaching system, Canada is also rich in possibilities and cultures. Research, scientific publications and international collaborations are three of the aspects that Canada and its universities focus on.</p>
+    <div class="container" style="margin-top: 30px;">
+         <p>The universities from Canada are preferred by more than <strong>130,000 international students yearly.</strong>  Offering a high-quality teaching system, Canada is also rich in possibilities and cultures. Research, scientific publications and international collaborations are three of the aspects that Canada and its universities focus on.</p>
 
-    <p>But how difficult is it to get the student visa for Canada? Figuring this out will play a crucial role when you decide where you want to study. So, what do you have to do to get your student visa for Canada and how difficult is it? Let's see what are the main steps for getting your Canadian student visa.</p>
+         <p>But how difficult is it to get the student visa for Canada? Figuring this out will play a crucial role when you decide where you want to study. So, what do you have to do to get your student visa for Canada and how difficult is it? Let's see what are the main steps for getting your Canadian student visa.</p>
 
-      <h2><strong>1. Decide on a university to apply to and get your acceptance letter</strong></h2>
-      <p>If you’re still not sure where you want to study in Canada, you will have to decide before you can start your student visa application process. After being accepted at a Canadian university, you’ll get an acceptance letter required for the visa application.</p>
-      <p style="margin-top: 1px;">Consider some of the top universities in Canada:</p>
-      <ul>
-        <li><strong>Brock University</strong></li>
-        <li><strong>Seneca College</strong></li>
-        <li><strong>University of Regina</strong></li>
-        <li><strong>wilfrid Laurier University</strong></li>
-        <li><strong>Mount Allison University</strong></li>
-      </ul>
-      <div class="col-md-6 mrgn-tp-md hidden-sm hidden-xs op2">
-       <%= image_tag "std1", class: "uc" %>
-      </div>
-      <h2 style="margin-top: 76px;"><strong>2. Check if you need to apply for a student visa in Canada</strong></h2>
-      <p>You don’t need a study visa (or Canadian study permit) if one of the following situations applies to you:</p>
-      <ul>
-        <li>You are a family or staff member of a foreign representative in Canada, who is accredited by the Department of Foreign Affairs, Trade and Development Canada.</li>
-        <li>You enrol in a study programme that lasts less than six months.</li>
-        <li>You are a member of foreign armed forces from the Visiting Forces Act.</li>
-        <li>You are a citizen of another country, but you have an Indian status registered in Canada.</li>
-      </ul>
-      <h2><strong>3. Start your application for the Canadian student visa</strong></h2>
-      <p>As soon as you got the acceptance letter from the university, it is time to proceed to the next step: applying for a student visa, which is locally known as a student permit.</p>
-      <p>The first steps to obtain your student visa:</p>
-      <ul>
-        <li>Apply online for your Canadian student visa, on the Citizenship and Immigration Canada (CIC) website before you arrive in Canada.</li>
-        <li>In countries with limited internet access it's also possible to apply for visa on paper.</li>
-        <li>Provide an acceptance letter from a designated learning institution (a university recognized by the Canadian government).</li>
-        <li>Deliver proof of sufficient financial resources to support your studies in Canada (tuition fees and living expenses).</li>
-        <li>Have no criminal record.</li>
-        <li>Submit clinical records that state you are in good health and complete medical examinations if required.</li>
-      </ul>
-      <p>According to recent visa regulations, if you have a family member working or applying for a work permit in Canada, the application for your study permit will be processed in two weeks. You may renew or extend your study permit, if you wish to continue your studies, if your programme has an extension or if you change your school.</p>
-      <p>The study permit expires 90 days after your studies are finished when you receive a notification of the programme completion. You can still stay in Canada to travel and explore or apply for a work permit, which allows you to take a full time or part time job, or even be self-employed.</p>
-      <p>Useful tip: check out if your home country is on the list of biometrics requests for the study permit application.</p>
-      <h2><strong>4. Prepare all required documents for the student visa in Canada</strong></h2>
-      <ul>
-        <li>Filled in student permit application form</li>
-        <li>The original letter of acceptance from the university</li>
-        <li>A valid passport/travel document, which also allows you to return to your home country. If you live in the U.S.A., this is not necessary</li>
-        <li>Two recent passport-size photographs, with specifications of name and date of birth on the back</li>
-        <li>Proof of financial support during your study programme. This means prooving you have between 10,000 and 11,000 CAD per year for living in the country.</li>
-        <li>A letter of intent</li>
-        <li>If you intend to study in Quebec, you will also need a Certificat d’acceptation du Québec, English and French translations for your document, a statement from the translator and a certified copy of the original documents</li>
-        <li>Proof that you paid the study permit fee (150 CAD)</li>
-      </ul>
-        <h2><strong>5. Language requirements for the Canadian student visa</strong></h2>
-        <p>Unless you come from an English-speaking country, Canadian universities will require you to submit proof of English language proficiency. Accepted language tests are:</p>
+          <h2><strong>1. Decide on a university to apply to and get your acceptance letter</strong></h2>
+          <p>If you’re still not sure where you want to study in Canada, you will have to decide before you can start your student visa application process. After being accepted at a Canadian university, you’ll get an acceptance letter required for the visa application.</p>
+          <p style="margin-top: 1px;">Consider some of the top universities in Canada:</p>
+          <div class="row">
+            <div class="col-md-5">
+              <ul>
+                <li><strong>Brock University</strong></li><br>
+                <li><strong>Seneca College</strong></li><br>
+                <li><strong>University of Regina</strong></li><br>
+                <li><strong>wilfrid Laurier University</strong></li><br>
+                <li><strong>Mount Allison University</strong></li>
+              </ul>
+            </div>
+            <div class="col-md-7">
+            <%= image_tag "std1", class: "img-fluid" %>
+            </div>
+          </div>
+
+        <h2 style="margin-top: 76px;"><strong>2. Check if you need to apply for a student visa in Canada</strong></h2>
+        <p>You don’t need a study visa (or Canadian study permit) if one of the following situations applies to you:</p>
         <ul>
-          <li>IELTS</li>
-          <li>Cambridge English: Advanced</li>
-          <li>TOEFL</li>
+          <li>You are a family or staff member of a foreign representative in Canada, who is accredited by the Department of Foreign Affairs, Trade and Development Canada.</li>
+          <li>You enrol in a study programme that lasts less than six months.</li>
+          <li>You are a member of foreign armed forces from the Visiting Forces Act.</li>
+          <li>You are a citizen of another country, but you have an Indian status registered in Canada.</li>
         </ul>
-        <p>Proof of your language skills is not included on the list of required documents for a Canadian student visa. But it is a good idea to have some proof of English ability, just in case.</p>
-        <h2><strong>6. Biometrics appointment and interview</strong></h2>
-        <p>Depending on the requirements for your home country, you might have to show up at a Visa Application Centre in your country to have your biometrics taken. The biometric fee is 85 CAD. This fee is in addition to the regular visa fee. Some countries are exempt from the biometrics visit, so it's likely they won't need to visit an application centre at all.</p>
-        <p>After applying for your Canadian study permit, the processing time for your visa may take up to 90 days, but usually takes less. This also depends a lot on the situation in your home country.</p>
-      <div style="text-align: center;">
-       <%= link_to "Apply now", new_canada_path, class: "btn btn-dark"  %>
-      </div>
-    <div class="brand">
-      <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
-        <div class="row">
-          <nav class="col-sm-10 ftr-urlt-lnk">
-            <ul class="list-group flex-md-row">
-              <li style="margin-right: 27px;">social-media</li>
-              <li style="margin-right: 27px;">Mobile-Application</li>
-              <li style="margin-right: 27px;">canada.ca</li>
-              <li style="margin-right: 27px;">Term&condition</li>
-              <li>Privacy</li>
-            </ul>
-          </nav>
-          <div class="col-xs-6 col-md-2 text-right">
-           <%= link_to canada_main_path(:can) do %>
-           <%= image_tag "last"%>
-           <%end%>
+        <h2><strong>3. Start your application for the Canadian student visa</strong></h2>
+        <p>As soon as you got the acceptance letter from the university, it is time to proceed to the next step: applying for a student visa, which is locally known as a student permit.</p>
+        <p>The first steps to obtain your student visa:</p>
+        <ul>
+          <li>Apply online for your Canadian student visa, on the Citizenship and Immigration Canada (CIC) website before you arrive in Canada.</li>
+          <li>In countries with limited internet access it's also possible to apply for visa on paper.</li>
+          <li>Provide an acceptance letter from a designated learning institution (a university recognized by the Canadian government).</li>
+          <li>Deliver proof of sufficient financial resources to support your studies in Canada (tuition fees and living expenses).</li>
+          <li>Have no criminal record.</li>
+          <li>Submit clinical records that state you are in good health and complete medical examinations if required.</li>
+        </ul>
+        <p>According to recent visa regulations, if you have a family member working or applying for a work permit in Canada, the application for your study permit will be processed in two weeks. You may renew or extend your study permit, if you wish to continue your studies, if your programme has an extension or if you change your school.</p>
+        <p>The study permit expires 90 days after your studies are finished when you receive a notification of the programme completion. You can still stay in Canada to travel and explore or apply for a work permit, which allows you to take a full time or part time job, or even be self-employed.</p>
+        <p>Useful tip: check out if your home country is on the list of biometrics requests for the study permit application.</p>
+        <h2><strong>4. Prepare all required documents for the student visa in Canada</strong></h2>
+        <ul>
+          <li>Filled in student permit application form</li>
+          <li>The original letter of acceptance from the university</li>
+          <li>A valid passport/travel document, which also allows you to return to your home country. If you live in the U.S.A., this is not necessary</li>
+          <li>Two recent passport-size photographs, with specifications of name and date of birth on the back</li>
+          <li>Proof of financial support during your study programme. This means prooving you have between 10,000 and 11,000 CAD per year for living in the country.</li>
+          <li>A letter of intent</li>
+          <li>If you intend to study in Quebec, you will also need a Certificat d’acceptation du Québec, English and French translations for your document, a statement from the translator and a certified copy of the original documents</li>
+          <li>Proof that you paid the study permit fee (150 CAD)</li>
+        </ul>
+          <h2><strong>5. Language requirements for the Canadian student visa</strong></h2>
+          <p>Unless you come from an English-speaking country, Canadian universities will require you to submit proof of English language proficiency. Accepted language tests are:</p>
+          <ul>
+            <li>IELTS</li>
+            <li>Cambridge English: Advanced</li>
+            <li>TOEFL</li>
+          </ul>
+          <p>Proof of your language skills is not included on the list of required documents for a Canadian student visa. But it is a good idea to have some proof of English ability, just in case.</p>
+          <h2><strong>6. Biometrics appointment and interview</strong></h2>
+          <p>Depending on the requirements for your home country, you might have to show up at a Visa Application Centre in your country to have your biometrics taken. The biometric fee is 85 CAD. This fee is in addition to the regular visa fee. Some countries are exempt from the biometrics visit, so it's likely they won't need to visit an application centre at all.</p>
+          <p>After applying for your Canadian study permit, the processing time for your visa may take up to 90 days, but usually takes less. This also depends a lot on the situation in your home country.</p>
+        <div style="text-align: center;">
+         <%= link_to "Apply now", new_canada_path, class: "btn btn-dark"  %>
+        </div>
+      <div class="brand">
+        <div class="container" style="margin-top: 26px; margin-bottom: 1px;">
+          <div class="row">
+            <nav class="col-sm-10 ftr-urlt-lnk">
+              <ul class="list-group flex-md-row">
+                <li style="margin-right: 27px;">social-media</li>
+                <li style="margin-right: 27px;">Mobile-Application</li>
+                <li style="margin-right: 27px;">canada.ca</li>
+                <li style="margin-right: 27px;">Term&condition</li>
+                <li>Privacy</li>
+              </ul>
+            </nav>
+            <div class="col-xs-6 col-md-2 text-right" style="margin-left: -85px;">
+             <%= link_to canada_main_path(:can) do %>
+             <%= image_tag "last"%>
+             <%end%>
+            </div>
           </div>
         </div>
       </div>
