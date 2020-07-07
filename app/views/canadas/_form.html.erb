@@ -53,6 +53,11 @@
           <%= f.label :'Marital status' %>
          <%= f.select :marital_status, options_for_select(["Select one","Single","Married"]), {}, class: "form-control" %>
       </div>
+      <div class="form-group col-md-4 field">
+        <%= f.label :'Sponsor name' %>
+         <%= f.text_field :sponsor, class: "form-control", placeholder: "Sponsor" %>
+
+      </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-4 field" >

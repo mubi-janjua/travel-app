@@ -1,7 +1,7 @@
 <body style="overflow-x: hidden;">
   <div class="container">
     <div class="row" style="margin-top: -32px;">
-      <div class="col-md-3 o1  img-fluid">
+      <div class="col-md-3 o1">
         <%= link_to canadas_path do %>
          <%= image_tag "can1"%>
         <%end%>
@@ -67,7 +67,7 @@
 
       <div class="row">
        <div class="col-md-12">
-          <h1 class="oo">List of all customer Canada</h1>
+          <h1 class="oo">List of all applicants canada</h1>
        </div>
       </div>
 
@@ -105,6 +105,7 @@
             <td><%= link_to 'show', canada_path(canada) %></td>
             <td><%= link_to 'edit', edit_canada_path(canada) %></td>
             <td><%= link_to "Delete", canada_path(canada), :confirm => "Are you sure?", :method => :delete %></td>
+             <!--  <td><%= link_to "display", canada_display_path(canada, :id, format: 'pdf') %></td> -->
           </tr>
           <%end%>
         </table>
@@ -112,11 +113,14 @@
       <div class="col-sm-12">
          <p class="float-right" style="margin-top: 196px;margin-right: -97px;">
           <% if user_signed_in? %>
-            Logged in as <strong><%= current_user.email %></strong>.
+            Logged in as <strong><%= current_user.name %></strong>.
             <%= link_to 'Edit profile', edit_user_registration_path %> |
             <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+         <!--    <%= link_to "Sign up", new_user_registration_path %> -->
+
             <% else %>
             <%= link_to "Login", new_user_session_path %>
+
           <% end %>
         </p>
     </div>

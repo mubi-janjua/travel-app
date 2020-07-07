@@ -3,6 +3,17 @@ class CanadasController < ApplicationController
   def index
 
   end
+
+  def display
+     @canada = Canada.find(params[:canada_id])
+
+    respond_to do |format|
+      format.html
+      format.pdf do
+       render pdf: "file_name"   # Excluding ".pdf" extension.
+      end
+    end
+  end
   def search
     if params[:search]
       @canada = Canada.search(params[:search]).order("application_no")
@@ -69,6 +80,6 @@ class CanadasController < ApplicationController
 
   private
   def canada_params
-    params.require(:canada).permit(:application_no, :first_name, :surname, :last_name, :nationality, :passport_no, :passport_expiry, :visa_category, :date_time, :application_status, :marital_status)
+    params.require(:canada).permit(:application_no, :first_name, :surname, :last_name, :nationality, :passport_no, :passport_expiry, :visa_category, :date_time, :application_status, :marital_status,:sponsor)
   end
 end

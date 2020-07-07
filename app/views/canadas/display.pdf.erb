@@ -1,0 +1,85 @@
+<%= wicked_pdf_stylesheet_link_tag "application.scss"%>
+ <div class="container">
+    <div class="form-row">
+      <div  class="form-group col-md-4">
+              <p>
+                <strong>Application no: </strong>
+                <span><%= '*'*@canada.application_no.length %></span>
+              </p>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-4">
+                     <strong>First name:</strong>
+               <span><%= @canada.first_name %></span>
+              </p>
+      </div>
+      <div class="form-group col-md-4">
+              <p>
+                <strong> Surname:</strong>
+                <span><%= @canada.surname %></span>
+              </p>
+      </div>
+     <div class="form-group col-md-4">
+              <p>
+                <strong>Last name</strong>
+                <span><%= @canada.last_name %></span>
+              </p>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group col-md-4">
+            <p>
+              <strong>Nationality:</strong>
+              <span><%= @canada.nationality %></span>
+            </p>
+      </div>
+      <div class="form-group col-md-4 field">
+              <p>
+                <strong>Marital Status</strong>
+                <span><%= @canada.marital_status%></span>
+              </p>
+      </div>
+        <div class="form-group col-md-4 field">
+          <p>
+            <strong>Sponsor Name:</strong>
+            <span><%= @canada.sponsor%></span>
+          </p>
+        </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-4 field" >
+              <p>
+                <strong>Passport no:</strong>
+                <span><%= @canada.passport_no%></span>
+              </p>
+      </div>
+      <div class="form-group col-md-4 field" >
+              <p>
+                <strong>Passport expiry</strong>
+                <span><%= @canada.passport_expiry %></span>
+              </p>
+      </div>
+      <div class="form-group col-md-4 field">
+              <p>
+                <strong>Visa category</strong>
+                <span><%= @canada.visa_category %></span>
+              </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-md-4 field">
+              <p>
+                <strong>Date&Time</strong>
+                <span><%= @canada.date_time %></span>
+              </p>
+      </div>
+      <div class="form-group col-md-4 field">
+              <p>
+                <strong>Application Status</strong>
+                <span><%= @canada.application_status %></span>
+              </p>
+      </div>
+    </div>
+  </div>

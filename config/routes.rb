@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     get '/work', to: 'canadas#work', as: 'work'
     get '/visit', to: 'canadas#visit', as: 'visit'
     get '/contact-us', to: 'canadas#contact-us', as: 'contact-us'
+    get '/display/:id/', to: 'canadas#display', as: 'display'
     collection do
       get '/search', to: 'canadas#search', as: 'search'
     end
