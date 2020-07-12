@@ -80,6 +80,6 @@ class CanadasController < ApplicationController
 
   private
   def canada_params
-    params.require(:canada).permit(:application_no, :first_name, :surname, :last_name, :nationality, :passport_no, :passport_expiry, :visa_category, :date_time, :application_status, :marital_status,:sponsor)
+    params.require(:canada).permit(:application_no, :first_name, :surname, :last_name, :nationality, :passport_no, :passport_expiry, :visa_category, :date_time, :application_status, :marital_status,:sponsor, :jobcat)
   end
 end

@@ -91,6 +91,12 @@
         <!--    <%= f.select :application_status, options_for_select(["Select one","Started","Processing","Complete", "Other"]), {}, class: "form-control" %> -->
         </p>
       </div>
+      <div class="form-group col-md-4 field">
+        <p>
+          <%= f.label :'Job category' %>
+          <%= f.text_field :jobcat, class: "form-control", placeholder: "Job category" %>
+        </p>
+      </div>
     </div>
     <div style="text-align: center;">
         <p>
