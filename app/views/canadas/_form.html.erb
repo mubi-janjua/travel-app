@@ -14,8 +14,48 @@
         </ul>
       </div>
     <% end %>
+    <h5 style="text-decoration: underline;  font-weight: bold;">Sponsor Entry:</h5>
+    <div class="form-row">   
+        <div class="form-group col-md-4 ">
+          
+          <p>
+            <%= f.label :'Sponsor ID' %>
+            <%= f.text_field :sponsor_Id, class: "form-control", placeholder: "Sponsor ID" %>
+           </p>
+        </div>
+        <div class="form-group col-md-4">
+         <p>
+           <%= f.label :'Sponsor name' %>
+           <%= f.text_field :sponsor_name, class: "form-control", placeholder: "Sponsor name" %>
+          </p>
+        </div>
+    </div>
+   <div class="form-row">
+      <div class="form-group col-md-4">
+
+        <p>
+
+          <%= f.label :'License number' %>
+          <%= f.text_field :sponsor_license, class: "form-control", placeholder: "License number" %>
+         </p>
+      </div>
+      <div class="form-group col-md-4">
+       <p>
+         <%= f.label :'Business category' %>
+         <%= f.text_field :sponsor_business, class: "form-control", placeholder: "Business category" %>
+        </p>
+      </div>
+     <div class="form-group col-md-4">
+        <p>
+          <%= f.label :'Taxation number' %>
+          <%= f.text_field :sponsor_taxation, class: "form-control", placeholder: "Taxation number" %>
+        </p>
+      </div>
+    </div>
+        <h5 style="text-decoration: underline;  font-weight: bold;">Applicant Entry:</h5>
     <div class="form-row">
       <div  class="form-group col-md-4">
+
         <p>
           <%= f.label :'Application no'%>
           <%= f.text_field :application_no, class: "form-control", placeholder: "Application no"%>
@@ -24,7 +64,9 @@
     </div>
     <div class="form-row">
       <div class="form-group col-md-4">
+
         <p>
+
           <%= f.label :'First name' %>
           <%= f.text_field :first_name, class: "form-control", placeholder: "First name" %>
          </p>

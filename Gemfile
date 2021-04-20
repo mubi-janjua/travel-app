@@ -32,6 +32,7 @@ gem 'jquery-rails'
 gem 'popper_js'
 gem 'tether-rails'
 gem 'simple_form'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
