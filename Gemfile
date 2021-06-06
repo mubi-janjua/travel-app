@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.0'
+ruby '2.6.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
@@ -32,6 +32,9 @@ gem 'jquery-rails'
 gem 'popper_js'
 gem 'tether-rails'
 gem 'simple_form'
+
+# gem 'execjs'
+# gem 'mini_racer'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
