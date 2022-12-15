@@ -17,16 +17,16 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: postgres
-  password: postgres
-  host: localhost
+  username: uadvqgal
+  password: rXWqg40ytNFj1Weo5N0v40NoMqc4gMJJ
+  host: ruby.db.elephantsql.com
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: agent-app_development
+  database: uadvqgal
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -83,6 +83,7 @@ test:
 #
 production:
   <<: *default
-  database: agent-app_production
-  username: agent-app
-  password: <%= ENV['AGENT-APP_DATABASE_PASSWORD'] %>
+  database: uadvqgal
+  username: uadvqgal
+  password: rXWqg40ytNFj1Weo5N0v40NoMqc4gMJJ
+  host: ruby.db.elephantsql.com
