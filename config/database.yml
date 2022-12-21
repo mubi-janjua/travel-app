@@ -24,9 +24,12 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-development:
-  <<: *default
-  database: uadvqgal
+development: &default
+  adapter: postgresql
+  encoding: unicode
+  username: uadvqgal
+  password: rXWqg40ytNFj1Weo5N0v40NoMqc4gMJJ
+  host: ruby.db.elephantsql.com
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
